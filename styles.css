@@ -1,0 +1,364 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(64, 54, 63, 0.05);
+}
+
+h1, h2 {
+    font-family: "Outfit", sans-serif;
+}
+
+p, a {
+    font-family: "Noto Sans", sans-serif;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    border: none;
+    text-align: center;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: .9rem;
+    margin: 4px 15px;
+    padding: 10px 24px;
+}
+
+.active {
+    background-color: #dd59c5;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+.larger {
+    font-size: 3rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('/img/header_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+    margin-top: 10px;
+}
+
+header h1 {
+    color: #e23dc6;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+header p {
+    color: #FFF;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #000;
+    width: 55vh;
+    height: 15vh;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 80vw;
+    width: 100%;
+    margin: 50px auto;
+    padding-bottom: 40px;
+}
+
+main h1 {
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.2rem;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    flex-basis: calc(25% - 20px);
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.card-body {
+    margin: 10px 30px 40px 30px;
+}
+
+.card_img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.card-desc {
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+
+.card_link {
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#contact {
+    width: 70vw;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.contact-container h2 {
+    font-size: 1.5rem;
+    color: #0282e4;
+}
+
+label {
+    color: #0282e4;
+}
+
+.form-items button {
+    padding: 0.5em;
+    background-color: #0282e4;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.form-items button:hover {
+    background-color: #016cbd;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    background: rgba(2, 209, 228, 0.14);
+    border-radius: 3px;
+    max-height: 100%;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.form-items {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.form-items textarea,
+.form-items input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #021751;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-row input {
+    margin-left: 10px;
+}
+
+.form-items textarea {
+    margin-top: 10px;
+}
+
+.map {
+    position: relative;
+    padding-bottom: 50%;
+    flex-basis: 60%;
+    overflow: hidden;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+    padding-bottom: 50px;
+}
+
+footer {
+    background: black;
+    width: 100%;
+    height: auto;
+    color: #FFFFFF;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+footer h1{
+    margin: 30px
+}
+
+footer .locate-us {
+    text-align: center;
+}
+
+footer .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+footer .socials img {
+    max-height: 50px;
+    max-width: 50px;
+    margin-right: 40px;
+}
+
+footer .socials img[alt="x"] {
+    filter: invert(1);
+    max-width: 45px;
+    max-height: 45px;
+    margin-right: 0;
+}
+
+footer .contact-info-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+footer .address {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+footer .address-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer .address a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer .address p {
+    margin-left: 50px;
+    padding-top: 5px;
+    text-align: end;
+    color: #919090;
+}
+
+footer #copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #333333;
+    width: 50%;
+    height: 5vh;
+    padding: 10px;
+    margin: auto;
+}
